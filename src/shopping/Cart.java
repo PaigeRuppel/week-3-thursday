@@ -16,11 +16,11 @@ public class Cart {
 	}
 
 	public double totalPrice() {
-		double cartPrice = 0; // local variables are not automatically given a
+		double cartTotal = 0; // local variables are not automatically given a
 								// default value, you must initialize
 		for (CartItem currentItem : items) {
-			cartPrice = cartPrice + currentItem.totalPrice();
+			cartTotal = cartTotal + currentItem.totalPrice();
 		}
-		return cartPrice;
+		return cartTotal;
 	}
 }
